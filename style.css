@@ -40,3 +40,32 @@ p{
     border: 3px;
     grid-gap: 15px;
 }
+
+.grid-container p{
+    border: 3px solid black;
+}
+
+.grid-item{
+    border: 3px solid aqua;
+    text-align: center;
+}
+
+.grid-meatpie{
+    grid-column: 3px;
+    grid-row: 3px;
+}
+
+.grid-puffpuff{
+    grid-column: 3px;
+    grid-row: 3px;
+}
+
+.grid-friedrice{
+    grid-column: 3px;
+    grid-row: 3px;
+}
+
+.grid-jollofrice{
+    grid-column: 3px;
+    grid-row: 3px;
+}
