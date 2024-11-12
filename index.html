@@ -4,25 +4,49 @@
     <meta charset="UTF_8"><!--sets characters to display on webpage-->
     <meta name="viewpoint" content="width=device-width, initial-sacle=0">
     <title>PROJECT HTML</title><!--display on browser tab-->
-    <link rel="icon" type="logo/x-icon" href="hscusines.jpg">
+    <link rel="icon" type="logo/x-icon" href="hslogo.jpg">
     <link rel="stylesheet" href="style.css" type="text/css">
+    
 </head>
-</body><!--display content-->
+</body>
+
+<!--display contactv details-->
+<div class="contact-bar">
+    <div class="contact-details">
+        <span class="phone"><a href= "tel:+447733328634">Tel: +44 7733328634</a></span>
+        <span class="email"><a href="mailto:hallykhalil03@gmail.com">hallykhalil03@gmail.com</a></span>
+        <span class="address">85 Acacia lane Branston</span>
+    </div>
+</div>
+<div class="content">
+<h1>Welcome to Hs Cuisines</h1>
+</div>
+<!--display content-->
+    <div id="image-container">
+    <img src="hscusines.jpg" alt="food logo" class="yummy-image">
     <h1>Delicious meals made to keep you happy</h1>
 <br>
+
+    
+    
 <div class="flex container"></div>
     <p class="flex item">Hs Cuisine is an authentic Nigerian restaurant that specializes on different traditional Nigerian meals.</p>
     <p class="flex item">Our main focus is to make you feel home away from home and put smiles on our customer's faces.</p>
     <p class="flex content">With  Hs Cuisine you will always have a reason to come back for more as we ensure all our customers leave with a big smile.</p>
     </div>
-    <img src="hscusines.jpg" alt="food logo">
+
+    <h2>Delicious Cuisines</h2>
 
 <br>
-    <img src="jollof.jpg" alt="jollof rice">
-    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/10de9e22b57d8bb366b76f969453e1b1/c9252e6c6cd289c588c3381bc77b1dfc.jpeg">
+    <img src="jollof.jpg" alt="jollof rice" class="cuisine-image"> 
+    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/10de9e22b57d8bb366b76f969453e1b1/c9252e6c6cd289c588c3381bc77b1dfc.jpeg"alt="delicious meal" class="food-image">
+        </div>
 
-    <a href="https://www.ubereats.com/gb/store/hs-cuisine/tVNq0jJSQ0Cj2qTjkA6dhg">View menus here</a><!--link specified to href-->
-
+        <div class="image container"></div>
+    <a href="https://www.ubereats.com/gb/store/hs-cuisine/tVNq0jJSQ0Cj2qTjkA6dhg"></a><!--link specified to href-->
+    </div>
+    
+    <button id="navigate-btn">View Menu Here!</button>
     <br>
 
     <h1>News letter</h1>
@@ -38,5 +62,20 @@
     <input type="password" id="password"/>
     <input type="submit" id="submit" vaule="Sign up"/>
     </form>
+
+
+    <h3>Welcome to our food gallery</h3>
+    <p>To view food gallery, click the link below:</p>
+    <a href="grid.html">view</a>
+
+<br>
+
+<input type="text" id="location" placeholder="Enter a location">
+<button onclick="searchRestaurants()">search</button>
+<div id="results"></div>
+
+<button id="toggle-dark-mode">Dark mode</button>
+
+    <script defer src="DOMManipulation.js"></script>
 
 </body>

@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRID photo</title>
     <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
+    <h1>Click a Meal to see its Ingredients</h1>
     <div class="grid-container"></div>
-    <p>meatpie</p>
-    <img src="meatpie.jpg" alt="yummy tasty">
-    <p>puffpuff</p>
-    <img src="puffpuff.jpg.jpeg" alt="divine goodness">
-    <p>friedrice</p>
-    <img src="friedrice.jpg" alt="yummy goodness">
-    <p>jollofrice</p>
-    <img src="jollofrice.jpg" alt="way to your heart">
+    <div class="grid-item">
+            <div id="foods"></div>
+    <div class="food-item" data-food="meatPie">Meatpie</div>
+    <img src="meatpie.jpg" alt="yummy tasty" class="food-item" data-food="meatpie">
+    <div class="food-item"data-food="puffPuff">Puffpuff</div>
+    <img src="puffpuff.jpg.jpeg" alt="divine goodness" class="food-item"data-food=puffpuff>
+    <div class="food-item" data-food="friedRice">Friedrice</div>
+    <img src="friedrice.jpg" alt="yummy goodness" class="food-item" data-food="friedrice">
+    <div class="food-item" data-food="jollofRice">jollofrice</div>
+    <img src="jollofrice.jpg" alt="way to your heart" class="food-item" data-food="jollofrice">
     </div>
+
+    <div id="ingredients" class="ingredients"></div>
+    <form id = "ingredient-form">
+    <div id="ingredient-fields">
+        <div class="ingredients">
+            <input type="text" name="ingredient[]"placeholder="ingredient" required>
+        </div>
+    </div>
+    <button type="button" onclick="addingingredientField()">Add more ingredient-form</button>
+    <button type="submit">submit ingredients</button>
+</form>
     
+<!--area where list of ingredient will be displayed-->
+<div class="ingredients-list">
+    <h2>ingredient-list</h2>
+    <ul id="ingredient-display"></ul>
+</div>
 </body>
 </html>
